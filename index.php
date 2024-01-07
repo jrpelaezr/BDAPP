@@ -28,7 +28,7 @@
       <tbody>
         <?php
 
-        $conexion = mysqli_connect(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), "BD");
+         $conexion = mysqli_connect("34.30.18.15", "root", "123456", "BD");
 
         $cadenaSQL = "select * from n-cliente";
         $resultado = mysqli_query($conexion, $cadenaSQL);
